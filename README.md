@@ -11,7 +11,7 @@ Or create the environment in supercomputer (ex. NERSC)
 ```
 conda create -p /global/common/software/xxxx/dftb
 ```
-
+Install DFTB by using mamba
 ```
 mamba install 'dftbplus=*=nompi_*'
 ```
