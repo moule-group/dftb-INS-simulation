@@ -18,5 +18,5 @@ mamba install 'dftbplus=*=nompi_*'
 ```
 Download Slater-Koster files from DFTB website
 ```
-https://dftb.org/parameters/download/all-sk-files
+* https://dftb.org/parameters/download/all-sk-files
 ```
