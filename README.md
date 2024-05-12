@@ -33,5 +33,5 @@ Now, we finish the installation of DFTB! :smirk:
 
 ## Relax structure by DFTB (dftb.py)
 Main functions:
-runDFTB(kPoints,geometry=None,temp=5,fmax=0.01,mode=None)
+* runDFTB(kPoints,geometry=None,temp=5,fmax=0.01,mode=None)
 It will automatically find the structure file in the folder(*.cif, *.gen)
