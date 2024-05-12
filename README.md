@@ -13,5 +13,6 @@ conda create -p /global/common/software/xxxx/dftb
 ```
 Install DFTB by using mamba
 ```
+conda activate dftb
 mamba install 'dftbplus=*=nompi_*'
 ```
