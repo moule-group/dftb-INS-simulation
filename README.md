@@ -30,3 +30,5 @@ Add another environment variable in your .bashrc file in order to run dftb+ with
 export PATH"=/path_to/dftb+/bin:$PATH"
 ```
 Now, we finish the installation of DFTB! :smirk:
+
+## Relax structure by DFTB 
