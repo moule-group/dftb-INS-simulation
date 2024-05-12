@@ -16,3 +16,7 @@ Install DFTB by using mamba
 conda activate dftb
 mamba install 'dftbplus=*=nompi_*'
 ```
+Download Slater-Koster files from DFTB website
+```
+https://dftb.org/parameters/download/all-sk-files
+```
