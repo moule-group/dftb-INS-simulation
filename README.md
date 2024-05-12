@@ -50,5 +50,5 @@ relax(kPoints,geometry,temp,fmax)
 * temp (int): temperature default is 5 units: [K]
 * fmax (float): Maximum allowed force for convergence between atoms (Defaults to 0.01)
 
-It will return #### geo_end.gen 
+It will return optimized structure file "geo_end.gen" in the folder.
 ### phonons
