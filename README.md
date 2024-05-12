@@ -4,4 +4,4 @@ Use Density functional tight binding theory to simulate inelastic neutron scatte
 
 ## Installing DFTB 
 
-*mamba install 'dftbplus=*=nompi_*'*
+*mamba install 'dftbplus=*=nompi_*'
