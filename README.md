@@ -1,3 +1,5 @@
 # DFTB-INS-simulation
 
-First step: installing DFTB 
+Use Density functional tight binding theory to simulate inelastic neutron scattering spectra
+
+## Installing DFTB 
