@@ -18,5 +18,10 @@ mamba install 'dftbplus=*=nompi_*'
 ```
 Download Slater-Koster files from DFTB website
 ```
-* https://dftb.org/parameters/download/all-sk-files
+https://dftb.org/parameters/download/all-sk-files
+```
+If you want to access DFTB by ASE, you have to set environment variable in your .bashrc file
+```
+export DFTB_PREFIX="/path_to/slako/mio/mio-1-1/"
+export ASE_DFTB_COMMAND="/path_to/dftb/bin/dftb+ > PREFIX.out"
 ```
