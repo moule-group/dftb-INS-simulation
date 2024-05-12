@@ -45,9 +45,9 @@ Create 1-optiDFTB folder and run
 ```
 relax(kPoints,geometry,temp,fmax)
 ```
-kPoints (list): number of kPoints for relaxation. default is [4,4,4]
-geometry: the structure file in the folder, ex.: "A.cif"
-temp: temperature default is 5 units: [K]
-fmax: Maximum allowed force for convergence between atoms (Defaults to 0.01)
+* kPoints (list): number of kPoints for relaxation. default is [4,4,4]
+* geometry: the structure file in the folder, ex.: "A.cif"
+* temp: temperature default is 5 units: [K]
+* fmax: Maximum allowed force for convergence between atoms (Defaults to 0.01)
 
 ### phonons
