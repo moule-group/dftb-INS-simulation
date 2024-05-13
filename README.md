@@ -52,3 +52,7 @@ relax(kPoints,geometry,temp,fmax)
 
 It will return optimized structure file "geo_end.gen" in the folder.
 ### phonons
+Run the command in terminal, it will create 2-phonons folder and copy relaxed structure to the folder.
+```
+bash phonons.sh
+```
