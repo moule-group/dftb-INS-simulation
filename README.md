@@ -56,3 +56,7 @@ Run the command in terminal, it will create 2-phonons folder and copy relaxed st
 ```
 bash phonons.sh
 ```
+Run phonopy command to create displacement structure files
+```
+phonopy -d --dim="4 4 4" --dftb+
+```
