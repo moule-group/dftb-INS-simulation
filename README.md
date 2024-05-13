@@ -61,3 +61,5 @@ Run phonopy command to create displacement structure files
 phonopy -d --dim="4 4 4" --dftb+
 ```
 The undistorted supercell is stored in geo.genS, while the required displacements are stored in files matching the pattern geo.genS-*
+
+Reference: https://phonopy.github.io/phonopy/dftb%2B.html
