@@ -63,9 +63,9 @@ phonopy -d --dim="4 4 4" --dftb+
 The undistorted supercell is stored in geo.genS, while the required displacements are stored in files matching the pattern geo.genS-*
 
 Create sub-folders to put geo.genS into the sub-folder.
-"""
+```
 parallel "mkdir {} && mv geo.genS-{} {}/geo.gen" ::: {001..288}
-"""
+```
 
 Reference: 
 * https://phonopy.github.io/phonopy/dftb%2B.html
