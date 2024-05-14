@@ -64,7 +64,7 @@ The undistorted supercell is stored in geo.genS, while the required displacement
 
 Create sub-folders to put geo.genS into the sub-folder.
 ```
-parallel "mkdir {} && mv geo.genS-{} {}/geo.gen" ::: {001..288}
+parallel "mkdir {} && mv geo.genS-{} {}/geo.gen" ::: {001..xyz}
 ```
 
 Reference: 
