@@ -3,7 +3,7 @@
 Use Density functional tight binding theory to simulate inelastic neutron scattering spectra.
 
 ## Installing DFTB 
-Create the environment in your PC.
+Create the environment in your PC or HPC.
 ```
 conda create -n dftb+
 ```
