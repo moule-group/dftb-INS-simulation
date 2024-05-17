@@ -6,7 +6,7 @@ Use Density functional tight binding theory to simulate inelastic neutron scatte
 Create the environment in HPC (ex. NERSC) and install phonopy (I recommend numpy version=1.22.4 since there is bug if you have newer version of numpy using DFTB)  
 ```
 conda create -p /global/common/software/xxxx/phonopy
-conda install -c conda-forge phonopy
+conda install -c conda-forge phonopy numpy=1.22.4
 ```
 
 ## Installing DFTB 
