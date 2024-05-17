@@ -66,6 +66,10 @@ Create sub-folders to put geo.genS into the sub-folder.
 ```
 parallel "mkdir {} && mv geo.genS-{} {}/geo_end.gen" ::: {001..xyz}
 ```
+Copy dftb.py in 2-phonons folder & Run the single point energy (static) calculation by parallel command
+```
+parallel "cd {} && python ../dftb.py -m phonons -k k1 k2 k3" ::: {001..xyz}
+```
 
 Reference: 
 * https://phonopy.github.io/phonopy/dftb%2B.html
