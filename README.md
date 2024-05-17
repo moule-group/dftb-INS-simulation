@@ -52,14 +52,8 @@ relax(kPoints,geometry,temp,fmax)
 
 It will return optimized structure file "geo_end.gen" in the folder.
 ### phonons
-Run the command in terminal, it will create 2-phonons folder and copy relaxed structure to the folder.
-```
-bash phonons.sh
-```
-Run phonopy command to create displacement structure files
-```
-phonopy -d --dim="4 4 4" --dftb+
-```
+phonon
+
 The undistorted supercell is stored in geo.genS, while the required displacements are stored in files matching the pattern geo.genS-*
 
 Create sub-folders to put geo.genS into the sub-folder.
@@ -68,7 +62,7 @@ parallel "mkdir {} && mv geo.genS-{} {}/geo_end.gen" ::: {001..xyz}
 ```
 Copy dftb.py in 2-phonons folder & Run the single point energy (static) calculation by parallel command
 ```
-parallel "cd {} && python ../dftb.py -m phonons -k k1 k2 k3" ::: {001..xyz}
+parallel "cd {} && python ../dftb.py -m force -k k1 k2 k3" ::: {001..xyz}
 ```
 
 Reference: 
