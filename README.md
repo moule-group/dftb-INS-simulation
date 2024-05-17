@@ -46,9 +46,9 @@ runDFTB(kPoints,sc,geometry=None,temp=5,fmax=1e-6,mode=None)
 It will automatically find the structure file in the folder(*.cif, *.gen)
 
 There are three modes, 
-*relax 
-*phonons
-*force
+* relax 
+* phonons
+* force
 
 ### relax
 Create 1-optiDFTB folder and run 
@@ -74,6 +74,7 @@ Copy dftb.py in 2-phonons folder & Run the single point energy (static) calculat
 ```
 parallel "cd {} && python ../dftb.py -m force -k k1 k2 k3" ::: {001..xyz}
 ```
+### force
 
 Reference: 
 * https://phonopy.github.io/phonopy/dftb%2B.html
