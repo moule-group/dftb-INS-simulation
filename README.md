@@ -43,6 +43,7 @@ There are two modes, relax and phonons
 ### relax
 Create 1-optiDFTB folder and run 
 ```
+python dftb.py -m relax
 relax(kPoints,geometry,temp,fmax)
 ```
 * kPoints (list): number of kPoints for relaxation. default is [4,4,4]
