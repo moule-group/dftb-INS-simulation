@@ -57,12 +57,10 @@ There are three modes,
 * force
 
 ### relax
-Create 1-optiDFTB folder and run 
 ```
 python dftb.py -m relax
 ```
-
-It will return optimized structure file "geo_end.gen" in the folder.
+Create 1-optiDFTB folder and return optimized structure file "geo_end.gen" in the folder.
 ### phonons
 ```
 python dftb.py -m phonons
