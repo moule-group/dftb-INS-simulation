@@ -45,7 +45,10 @@ runDFTB(kPoints,sc,geometry=None,temp=5,fmax=1e-6,mode=None)
 ```
 It will automatically find the structure file in the folder(*.cif, *.gen)
 
-There are two modes, relax and phonons
+There are three modes, 
+*relax 
+*phonons
+*force
 
 ### relax
 Create 1-optiDFTB folder and run 
