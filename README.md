@@ -43,6 +43,12 @@ Main functions:
 ```
 runDFTB(kPoints,sc,geometry=None,temp=5,fmax=1e-6,mode=None)
 ```
+* kPoints (list): number of kPoints for relaxation. (Defaults to [8,8,8])
+* sc (list): supercell size. (Defaults to [4,4,4])
+* geometry: the structure file in the folder, ex.: "A.cif"
+* temp (int): temperature (Defaults to 5 K)
+* fmax (float): Maximum allowed force for convergence between atoms. (Defaults to 1e-6)
+
 It will automatically find the structure file in the folder(*.cif, *.gen)
 
 There are three modes, 
@@ -55,10 +61,6 @@ Create 1-optiDFTB folder and run
 ```
 python dftb.py -m relax
 ```
-* kPoints (list): number of kPoints for relaxation. default is [8,8,8]
-* geometry: the structure file in the folder, ex.: "A.cif"
-* temp (int): temperature (Defaults to 5 K)
-* fmax (float): Maximum allowed force for convergence between atoms (Defaults to 1e-6)
 
 It will return optimized structure file "geo_end.gen" in the folder.
 ### phonons
