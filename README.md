@@ -62,8 +62,9 @@ python dftb.py -m relax
 
 It will return optimized structure file "geo_end.gen" in the folder.
 ### phonons
-phonon
-
+```
+python dftb.py -m phonons
+```
 The undistorted supercell is stored in geo.genS, while the required displacements are stored in files matching the pattern geo.genS-*
 
 Create sub-folders to put geo.genS into the sub-folder.
