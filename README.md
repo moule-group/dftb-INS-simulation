@@ -65,7 +65,7 @@ Create 1-optiDFTB folder and return optimized structure file "geo_end.gen" in th
 ```
 python dftb.py -m phonons
 ```
-The undistorted supercell is stored in geo.genS, while the required displacements are stored in files matching the pattern geo.genS-*
+Write phonon.sh file and run this file. Return the undistorted supercell is stored in geo.genS, while the required displacements are stored in files matching the pattern geo.genS-*
 
 Create sub-folders to put geo.genS into the sub-folder.
 ```
