@@ -34,7 +34,7 @@ Now, we finish the installation of DFTB! :smirk:
 ## Simulated INS spectras by DFTB (dftb.py)
 Main functions:
 ```
-runDFTB(kPoints,geometry=None,temp=5,fmax=0.01,mode=None)
+runDFTB(kPoints,sc,geometry=None,temp=5,fmax=1e-6,mode=None)
 ```
 It will automatically find the structure file in the folder(*.cif, *.gen)
 
@@ -44,12 +44,11 @@ There are two modes, relax and phonons
 Create 1-optiDFTB folder and run 
 ```
 python dftb.py -m relax
-relax(kPoints,geometry,temp,fmax)
 ```
-* kPoints (list): number of kPoints for relaxation. default is [4,4,4]
+* kPoints (list): number of kPoints for relaxation. default is [8,8,8]
 * geometry: the structure file in the folder, ex.: "A.cif"
 * temp (int): temperature (Defaults to 5 K)
-* fmax (float): Maximum allowed force for convergence between atoms (Defaults to 0.01)
+* fmax (float): Maximum allowed force for convergence between atoms (Defaults to 1e-6)
 
 It will return optimized structure file "geo_end.gen" in the folder.
 ### phonons
