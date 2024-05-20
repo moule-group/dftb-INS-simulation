@@ -85,7 +85,7 @@ srun -n --ntasks: number of tasks, equals to ntasks_per_node x num_of_node
 Total Logical Processors = Number of Physical Cores × Threads per Core; (in Perlmutter, each node has 2 64 core AMD CPUs and each AMD CPU has 2 hardware threads)
 
 
-srun -c --cpus-per-task: equals to num_of_cpu (2*2*64) / ntasks_per_node
+srun -c --cpus-per-task: equals to num_of_cpu (2x2x64) / ntasks_per_node
 
 Reference: 
 * https://phonopy.github.io/phonopy/dftb%2B.html
