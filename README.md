@@ -77,7 +77,10 @@ Copy dftb.py in 2-phonons folder & Run the single point energy (static) calculat
 ```
 parallel "cd {} && python ../dftb.py -m force -k k1 k2 k3" ::: {001..xyz}
 ```
-
+After finishing all the force calculation, run the command below
+```
+phonopy -f {001..072}/results.tag --dftb+
+```
 #### appendix
 
 srun -n --ntasks: number of tasks, equals to ntasks_per_node x num_of_node
