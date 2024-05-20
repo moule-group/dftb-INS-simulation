@@ -75,11 +75,11 @@ parallel "mkdir {} && mv geo.genS-{} {}/geo_end.gen" ::: {001..xyz}
 ### force
 Copy dftb.py in 2-phonons folder & Run the single point energy (static) calculation by parallel command
 ```
-parallel "cd {} && python ../dftb.py -m force -k k1 k2 k3" ::: {001..xyz}
+parallel --delay .2 bash force.sh ::: {001..xyz}
 ```
 After finishing all the force calculation, run the command below
 ```
-phonopy -f {001..072}/results.tag --dftb+
+phonopy -f {001..xyz}/results.tag --dftb+
 ```
 #### appendix
 
