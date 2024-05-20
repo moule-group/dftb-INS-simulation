@@ -77,6 +77,11 @@ parallel "cd {} && python ../dftb.py -m force -k k1 k2 k3" ::: {001..xyz}
 ```
 ### force
 
+
+#### appendix
+
+srun -n --ntasks: number of tasks, equals to tasks_per_node * num_of_node
+
 Reference: 
 * https://phonopy.github.io/phonopy/dftb%2B.html
 * https://dftbplus-recipes.readthedocs.io/en/latest/
