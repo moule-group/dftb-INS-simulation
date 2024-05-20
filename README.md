@@ -80,7 +80,12 @@ parallel "cd {} && python ../dftb.py -m force -k k1 k2 k3" ::: {001..xyz}
 
 #### appendix
 
-srun -n --ntasks: number of tasks, equals to tasks_per_node * num_of_node
+srun -n --ntasks: number of tasks, equals to ntasks_per_node x num_of_node
+
+Total Logical Processors = Number of Physical Cores × Threads per Core; (in Perlmutter, each node has 2 64 core AMD CPUs and each AMD CPU has 2 hardware threads)
+
+
+srun -c --cpus-per-task: equals to num_of_cpu (2*2*64) / ntasks_per_node
 
 Reference: 
 * https://phonopy.github.io/phonopy/dftb%2B.html
