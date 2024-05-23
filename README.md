@@ -41,13 +41,13 @@ Now, we finish the installation of DFTB! :smirk:
 ## Simulated INS spectras by DFTB (dftb.py)
 Main functions:
 ```
-runDFTB(kPoints,sc,geometry=None,temp=5,fmax=1e-6,mode=None)
+runDFTB(kPoints,sc,geometry=None,temp=5,fmax=5e-4,mode=None)
 ```
 * kPoints (list): number of kPoints for relaxation. (Defaults to [8,8,8])
 * sc (list): supercell size. (Defaults to [4,4,4])
 * geometry: the structure file in the folder, ex.: "A.cif"
 * temp (int): temperature (Defaults to 5 K)
-* fmax (float): Maximum allowed force for convergence between atoms. (Defaults to 1e-6)
+* fmax (float): Maximum allowed force for convergence between atoms. (Defaults to 5e-4)
 
 It will automatically find the structure file in the folder(*.cif, *.gen)
 
