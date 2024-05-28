@@ -81,6 +81,13 @@ After finishing all the force calculation, run the command below
 ```
 phonopy -f {001..xyz}/results.tag --dftb+
 ```
+Create mesh.conf
+```
+   ATOM_NAME = C O H
+   DIM = 2 2 2
+   MP = 8 8 8
+   EIGENVECTORS = .TRUE.
+   ```
 #### appendix
 
 srun -n --ntasks: number of tasks, equals to ntasks_per_node x num_of_node
