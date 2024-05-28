@@ -88,6 +88,10 @@ Create mesh.conf
    MP = 8 8 8
    EIGENVECTORS = .TRUE.
    ```
+Calculate phonons and DOS. We will get "phonopy.yaml" and "mesh.yaml" file.
+```
+phonopy -p mesh.conf
+```
 #### appendix
 
 srun -n --ntasks: number of tasks, equals to ntasks_per_node x num_of_node
