@@ -41,7 +41,7 @@ Now, we finish the installation of DFTB! :smirk:
 ## Simulated INS spectras by DFTB (dftb.py)
 Main functions:
 ```
-runDFTB(kPoints,sc,geometry=None,temp=5,fmax=5e-4,mode=None)
+kPoints=[4,4,4],sc=[2,2,2],geometry=None,temp=5,fmax=1e-3,mode=None
 ```
 * kPoints (list): number of kPoints for relaxation. (Defaults to [4,4,4])
 * sc (list): supercell size. (Defaults to [2,2,2])
