@@ -52,9 +52,9 @@ runDFTB(kPoints=[1,1,1],sc=[2,2,2],geometry=None,temp=5,fmax=1e-3,mode=None)
 It will automatically find the structure file in the folder(POSCAR, /*.gen)
 
 There are three modes, 
-* relax 
-* phonons
-* force
+* relax: Relax crystal structures
+* phonons: Create finite displacement structure files and put into separate folders.
+* force: Single point energy calculation and extract force by using DFTB, this step is for getting phonons with phonopy.
 
 ### relax
 ```
