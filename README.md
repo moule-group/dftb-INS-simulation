@@ -83,10 +83,10 @@ phonopy -f {001..xyz}/results.tag --dftb+
 ```
 Create mesh.conf
 ```
-   ATOM_NAME = C O H
-   DIM = 2 2 2
-   MP = 8 8 8
-   EIGENVECTORS = .TRUE.
+ATOM_NAME = C H
+DIM = 2 2 2
+MP = 8 8 8
+EIGENVECTORS = .TRUE.
    ```
 Calculate phonons and DOS. We will get "phonopy.yaml" and "mesh.yaml" file.
 ```
