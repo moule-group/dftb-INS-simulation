@@ -68,7 +68,7 @@ python dftb.py -m phonons
 ```
 Write phonon.sh file and run this file. Return the undistorted supercell is stored in geo.genS, while the required displacements are stored in files matching the pattern geo.genS-*
 
-Create sub-folders to put geo.genS into the sub-folder.
+Create sub-folders to put geo.genS into the sub-folder (using parallel).
 ```
 parallel "mkdir {} && mv geo.genS-{} {}/geo_end.gen" ::: {001..xyz}
 ```
