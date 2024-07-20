@@ -48,7 +48,7 @@ runDFTB(kPoints=[1,1,1],sc=[2,2,2],geometry=None,temp=5,fmax=1e-3,mode=None,disp
 * geometry: the structure file in the folder, ex.: "POSCAR" or /*.gen
 * temp (int): temperature (Defaults to 5 K)
 * fmax (float): Maximum allowed force for convergence between atoms. (Defaults to 1e-3)
-* disp (boolean): Dispersion correction using DFT-D3 (Defaults to False)
+* disp (boolean): Dispersion correction using DFT-D3 (Defaults to False if not specifiy in command)
 
 It will automatically find the structure file in the folder(POSCAR, /*.gen)
 
