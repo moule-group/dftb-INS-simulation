@@ -417,6 +417,7 @@ def runDFTB(ensemble,fmax,kPoints,mode,nsw,sc,temp,disp=False):
     fmax: Defaults to 5e-4
     kPoints: Defaults to [1,1,1]
     mode (int): Need to specify
+    nsw (int): Number of steps for MD simulation
     sc (list): Defaults to [2,2,2]
     temp (float): Defaults to 150K
     disp (boolean): Dispersion correction using DFT-D3 (Defaults to False)
