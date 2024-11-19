@@ -52,11 +52,13 @@ runDFTB(kPoints=[1,1,1],sc=[2,2,2],geometry=None,temp=5,fmax=1e-3,mode=None,disp
 
 It will automatically find the structure file in the folder(POSCAR, /*.gen)
 
-There are three modes, 
-* relax: Relax crystal structures
-* phonons: Create finite displacement structure files and put into separate folders.
-* force: Single point energy calculation and extract force by using DFTB, this step is for getting phonons with phonopy.
-
+There are 5 modes, 
+* 1-relax: Relax crystal structures
+* 2-phonons: Create finite displacement structure files and put into separate folders.
+* 3-force: Single point energy calculation and extract force by using DFTB, this step is for getting phonons with phonopy.
+* 4-md: DFTB-MD simulation
+* 5-restart_md: Restart DFTB-MD simulation if necessary
+ 
 ### relax
 ```
 python dftb.py -m relax
@@ -93,6 +95,11 @@ Calculate phonons and DOS. We will get "phonopy.yaml" and "mesh.yaml" file.
 ```
 phonopy -p mesh.conf
 ```
+
+#### md
+
+#### restart_md
+
 #### appendix
 
 srun -n --ntasks: number of tasks, equals to ntasks_per_node x num_of_node
