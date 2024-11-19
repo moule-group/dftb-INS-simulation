@@ -117,6 +117,7 @@ It will create remd.sh and run_restart file, then
 bash remd.sh <name of folder that simulation finish> <name of the folder for next simulation>
 ```
 This will generate the folder to continute the simulation.
+Note: For restart the md simulation and collect the trajectroy after MD simulation, we need the script, which can be found in the link https://github.com/korintje/dftbplus_restarter.
 #### appendix
 
 srun -n --ntasks: number of tasks, equals to ntasks_per_node x num_of_node
