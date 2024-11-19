@@ -109,7 +109,14 @@ python dftb.py -m 4 -e 2
 ```
 
 #### restart_md
-
+```
+python dftb.py -m 5
+```
+It will create remd.sh and run_restart file, then 
+```
+bash remd.sh <name of folder that simulation finish> <name of the folder for next simulation>
+```
+This will generate the folder to continute the simulation.
 #### appendix
 
 srun -n --ntasks: number of tasks, equals to ntasks_per_node x num_of_node
