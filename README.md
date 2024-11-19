@@ -99,6 +99,14 @@ phonopy -p mesh.conf
 ```
 
 #### md
+For NVT ensemble, here we use Nose-Hoover thermostat, set -e 1.
+```
+python dftb.py -m 4 -e 1
+```
+For NVE ensemble, set -e 2.
+```
+python dftb.py -m 4 -e 2
+```
 
 #### restart_md
 
